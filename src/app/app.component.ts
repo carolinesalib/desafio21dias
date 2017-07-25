@@ -44,4 +44,14 @@ export class MyApp {
 
     return mm + '/' + dd + '/' + yyyy;
   }
+
+  getColor() {
+
+    if (this.complains == 0) {
+      return "green";
+    } else if (this.complains < 7) {
+      return "yellow";
+    }
+    return "red";
+  }
 }
